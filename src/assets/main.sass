@@ -1,0 +1,459 @@
+.clear,
+.clearfix:after
+    clear: both
+
+
+.post,
+.search,
+.user__avatar
+    overflow: hidden
+
+
+.comment-form__textarea:focus,
+.search input:focus
+    outline: 0
+
+
+.block,
+.btn
+    text-align: center
+
+
+*,
+:after,
+:before
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+
+img
+    max-width: 100%
+    height: auto
+
+
+input[type=submit]
+    cursor: pointer
+
+
+hr
+    display: block
+    height: 1px
+    border: 0
+    border-top: 1px solid #ccc
+    margin: 1em 0
+    padding: 0
+
+
+textarea
+    resize: vertical
+
+
+.clearfix:after,
+.clearfix:before
+    content: " "
+    display: table
+
+
+.clear
+    height: 0
+    width: 0
+    visibility: hidden
+
+
+.browserupgrade
+    margin: .2em 0
+    background: #ccc
+    color: #000
+    padding: .2em 0
+
+
+body,
+html
+    min-width: 320px
+    background-color: #E0E0E0
+    font-family: Roboto, sans-serif
+
+
+html
+    line-height: 1.4
+
+
+body
+    font-family: 'Noto Sans'
+    padding-bottom: 5%
+    margin: 0
+    padding-top: 120px
+
+
+a
+    color: #4299E1
+
+
+.subtitle_text,
+p
+    font-size: 14px
+    line-height: 24px
+    color: #777
+
+
+.subtitle_text
+    margin-top: 0
+    margin-bottom: 50px
+
+
+.block,
+.page-title
+    font-size: 32px
+    font-weight: 700
+
+
+.block
+    background: #FFDB4C
+    padding: 20px
+    color: #000
+    margin-top: 30px
+    margin-bottom: 30px
+
+
+.header,
+.post
+    background: #FFF
+
+
+.header__link,
+.header__logo
+    color: #455A64
+    text-decoration: none
+
+
+.line
+    border-top: 1px solid #EAEFF5
+
+
+.container
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+
+
+.page-title
+    padding: 10px 0 35px
+
+
+.faded
+    opacity: .3
+
+
+.header
+    padding: 10px 0
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    -webkit-box-shadow: 0 10px 20px 0 rgba(204, 204, 204, .5)
+    box-shadow: 0 10px 20px 0 rgba(204, 204, 204, .5)
+
+
+.header__row
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+
+.header__logo
+    display: inline-block
+    font-size: 48px
+    margin-right: 43px
+
+
+.header__links
+    font-size: 26px
+
+
+.header__link
+    margin-right: 30px
+
+
+.header__link:last-child
+    margin-right: 0
+
+
+.post
+    border-radius: 6px
+    -webkit-box-shadow: 0 10px 20px 0 #ccc
+    box-shadow: 0 10px 20px 0 #ccc
+    margin-bottom: 60px
+
+
+.post__header
+    padding: 15px 20px
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+
+.post__links a
+    margin-right: 25px
+
+
+.post__links a:last-child
+    margin-right: 0
+
+
+.post__img img
+    display: block
+
+
+.post__buttons,
+.user
+    display: -webkit-box
+    display: -ms-flexbox
+
+
+.post__img .slider img
+    width: 100% !important
+
+
+.post__data
+    padding: 10px 20px
+
+
+.post__description
+    padding: 5px 0
+    font-size: 16px
+
+
+.post__hashtags
+    padding: 5px 0
+
+
+.post__hashtags a
+    text-decoration: none
+    font-weight: 700
+    font-size: 14px
+    margin-right: 5px
+
+
+.post__comment-form
+    border-top: 1px solid rgba(223, 223, 223, .7)
+    padding: 10px 20px
+
+
+.post__edit
+    padding: 15px
+    font-size: 16px
+    border-bottom: 1px solid rgba(223, 223, 223, .7)
+
+
+.post__edit-name
+    font-weight: 700
+    opacity: .7
+    padding-left: 10px
+    margin-bottom: 5px
+
+
+.post__edit-textarea
+    width: 100%
+    font-family: Roboto, sans-serif
+    font-size: 15px
+    padding: 5px 10px
+    border: none
+    min-height: 40px
+    line-height: 1.5
+    color: #4382a0
+
+
+.post__buttons
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    padding: 15px
+
+
+.post__buttons .btn:not(:last-child)
+    margin-bottom: 10px
+
+
+.user
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+
+.user__avatar
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    -o-object-position: center
+    object-position: center
+    margin-right: 15px
+
+
+.user__avatar img
+    width: 100%
+    height: 100%
+    -o-object-fit: cover
+    object-fit: cover
+
+
+.user__name
+    font-weight: 700
+    font-size: 18px
+    color: #000
+    text-decoration: none
+
+
+.edit-link
+    text-decoration: none
+
+
+.edit-link i
+    margin-right: 5px
+
+
+.post-comment
+    border-top: 1px solid rgba(223, 223, 223, .7)
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    padding: 15px 20px
+
+
+.post-comment__avatar
+    -ms-flex-negative: 0
+    flex-shrink: 0
+    display: inline-block
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    overflow: hidden
+    -o-object-position: center
+    object-position: center
+    margin-right: 15px
+
+
+.post-comment__avatar img
+    width: 100%
+    height: 100%
+    -o-object-fit: cover
+    object-fit: cover
+
+
+.post-comment__text
+    font-size: 15px
+
+
+.post-comment__name
+    text-decoration: none
+    color: #555
+    font-weight: 600
+
+
+.comment-form
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: start
+    -ms-flex-align: start
+    align-items: flex-start
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+
+
+.comment-form__textarea
+    width: auto
+    -webkit-box-flex: 5
+    -ms-flex-positive: 5
+    flex-grow: 5
+    font-family: Roboto, sans-serif
+    font-size: 15px
+    padding: 10px
+    border: none
+    min-height: 40px
+
+
+.comment-form__button
+    -ms-flex-negative: 0
+    flex-shrink: 0
+    font-size: 15px
+    font-weight: 600
+    color: #4299E1
+    border: none
+    background-color: transparent
+    cursor: pointer
+    padding: 5px 10px
+
+
+.comment-form__button[disabled]
+    opacity: .5
+    cursor: default
+
+
+.search
+    position: relative
+    border: 1px solid rgba(223, 223, 223, .7)
+    border-radius: 4px
+    width: 320px
+
+
+.btn,
+.search input
+    width: 100%
+    border: none
+
+
+.search input
+    padding: 10px 30px 10px 15px
+    font-size: 15px
+
+
+.search__cancel
+    display: none
+    position: absolute
+    right: 8px
+    top: 8px
+    cursor: pointer
+    color: #777
+
+
+.btn,
+.search__cancel--active
+    display: block
+
+
+.btn
+    background-color: #777
+    color: #FFF
+    font-size: 16px
+    font-weight: 700
+    line-height: 1.3
+    padding: 1em 2em
+    border-radius: 4px
+    cursor: pointer
+
+
+.btn:hover
+    opacity: .8
+
+
+.btn--save
+    background-color: #38B95C
+    color: #FFF
+
+

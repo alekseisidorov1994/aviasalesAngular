@@ -1,0 +1,62 @@
+<div class="ticket mb-20">
+  <div class="ticket__price">{{ticket.price}} P</div>
+  <div class="ticket__logo">
+    <img src="./assets/logo.png" alt="company" class="ticket__logo-img">
+  </div>
+
+  <div class="ticket__wrap">
+    <div class="ticket__item">
+      <p class="ticket__item-name">{{ticket.segments[0].origin}} - {{ticket.segments[0].destination}}</p>
+      <p class="ticket__item-value">{{ticket.segments[0].date | arrayTime:ticket.segments[0].duration}}</p>
+    </div>
+    <div class="ticket__item">
+      <p class="ticket__item-name">В ПУТИ</p>
+      <p class="ticket__item-value">{{ticket.segments[0].duration | durationTime}}</p>
+    </div>
+    <div class="ticket__item">
+      <p class="ticket__item-name" *ngIf="ticket.segments[0].stops.length === 1">
+        {{ticket.segments[0].stops.length}} пересадкa
+      </p>
+      <p class="ticket__item-name" *ngIf="ticket.segments[0].stops.length > 1">
+        {{ticket.segments[0].stops.length}} пересадки
+      </p>
+      <p class="ticket__item-name" *ngIf="!ticket.segments[0].stops.length">
+        Без пересадок
+      </p>
+      <p class="ticket__item-value" *ngIf="ticket.segments[0].stops.length; else nonLength">
+        {{ticket.segments[0].stops}}
+      </p>
+      <ng-template #nonLength>
+        <p class="ticket__item-value" [ngStyle]="{paddingLeft: '30%'}"> - </p>
+      </ng-template>
+
+    </div>
+    <div class="ticket__item">
+      <p class="ticket__item-name">{{ticket.segments[1].origin}} - {{ticket.segments[1].destination}}</p>
+      <p class="ticket__item-value">{{ticket.segments[0].date | arrayTime:ticket.segments[0].duration}}</p>
+    </div>
+    <div class="ticket__item">
+      <p class="ticket__item-name">В ПУТИ</p>
+      <p class="ticket__item-value">{{ticket.segments[1].duration | durationTime}}</p>
+    </div>
+    <div class="ticket__item">
+      <p class="ticket__item-name" *ngIf="ticket.segments[1].stops.length === 1">
+        {{ticket.segments[1].stops.length}} пересадкa
+      </p>
+      <p class="ticket__item-name" *ngIf="ticket.segments[1].stops.length > 1">
+        {{ticket.segments[1].stops.length}} пересадки
+      </p>
+      <p class="ticket__item-name" *ngIf="!ticket.segments[1].stops.length">
+        Без пересадок
+      </p>
+      <p class="ticket__item-value" *ngIf="ticket.segments[1].stops.length; else nonLength">
+        {{ticket.segments[1].stops}}
+      </p>
+      <ng-template #nonLength>
+        <p class="ticket__item-value" [ngStyle]="{paddingLeft: '30%'}"> - </p>
+      </ng-template>
+
+    </div>
+  </div>
+</div>
+

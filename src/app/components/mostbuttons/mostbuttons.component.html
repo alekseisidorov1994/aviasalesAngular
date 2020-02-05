@@ -1,0 +1,16 @@
+<div class="mostBtn mb-20">
+  <div class="mostBtn__wrap">
+    <div class="mostBtn__item mostBtn__cheap"
+     (click)="changeFilter(true)"
+     [class.mostBtn__item_active]="filterBtnCheapFast"
+    >
+      Самый дешевый
+    </div>
+    <div class="mostBtn__item mostBtn__fast"
+     (click)="changeFilter(false)"
+     [class.mostBtn__item_active]="!filterBtnCheapFast"
+    >
+      Самый быстрый
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="main" >
+  <div class="container">
+    <div class="main__logo">
+      <img src="./assets/fly.png" alt="fly" class="main__img">
+    </div>
+    <app-filter></app-filter>
+    <div class="main__box">
+      <app-mostbuttons></app-mostbuttons>
+      <div *ngIf="filterTicketsService.filtredTickets">
+        <app-ticket *ngFor="let ticket of filterTicketsService.filtredTickets | quantity: 5" [ticket]="ticket"></app-ticket>
+      </div>
+    </div>
+  </div>
+
+</div>

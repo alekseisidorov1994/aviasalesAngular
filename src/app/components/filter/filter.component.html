@@ -1,0 +1,47 @@
+<div class="filter">
+
+  <p class="filter__name">Количество пересадок</p>
+
+  <div class="filter__wrap">
+    <div class="filter__item">
+      <label class="filter__label">
+        <input type="checkbox" class="filter__checkbox" [(ngModel)]="filters.all" (ngModelChange)="sendFilter(filtAll)" #filtAll>
+        <span class="filter__check"></span>
+        Все
+      </label>
+    </div>
+
+    <div class="filter__item">
+      <label class="filter__label">
+        <input type="checkbox" class="filter__checkbox" [(ngModel)]="filters.off" (ngModelChange)="sendFilter()" >
+        <span class="filter__check"></span>
+        Без пересадок
+      </label>
+    </div>
+
+    <div class="filter__item">
+      <label class="filter__label">
+        <input type="checkbox" class="filter__checkbox" [(ngModel)]="filters.t1" (ngModelChange)="sendFilter()">
+        <span class="filter__check"></span>
+        1 пересадка
+      </label>
+    </div>
+    <div class="filter__item">
+      <label class="filter__label">
+        <input type="checkbox" class="filter__checkbox" [(ngModel)]="filters.t2" (ngModelChange)="sendFilter()">
+        <span class="filter__check"></span>
+        2 пересадки
+      </label>
+    </div>
+
+    <div class="filter__item">
+      <label class="filter__label">
+        <input type="checkbox" class="filter__checkbox" [(ngModel)]="filters.t3" (ngModelChange)="sendFilter()">
+        <span class="filter__check"></span>
+        3 пересадки
+      </label>
+    </div>
+
+  </div>
+</div>
+
